@@ -1,0 +1,476 @@
+/* styles.css */
+
+html {
+  scroll-behavior: smooth;
+}
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.7);
+}
+
+.carousel-caption {
+  bottom: 20%;
+  z-index: 10;
+  text-shadow: 2px 2px 12px #000;
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  color: #00ffea;
+  font-weight: 600;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea;
+}
+
+
+body {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  background: transparent;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.navbar {
+  background-color: #1f2937;
+  padding: 0 !important;
+}
+
+.navbar-brand img {
+  height: 90px;
+  width: 90px;
+  object-fit: contain;
+}
+
+.nav-link {
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #00ffea !important;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 255, 234, 0.08);
+  box-shadow: 0 0 6px rgba(0, 255, 234, 0.25);
+  color: #0ff !important;
+}
+
+.btn-accent {
+  background-color: #00ffea;
+  color: #000;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 6px 14px;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-accent:hover {
+  background-color: #0ff;
+  color: #000;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #00ffea;
+  text-shadow: 2px 2px 10px black;
+}
+
+.btn-glow {
+  background-color: #00ffea;
+  border: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.btn-glow:hover {
+  background-color: #0ff;
+}
+
+.section-title {
+  border-bottom: 2px solid #00ffea;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.carousel-inner {
+  height: 500px;
+}
+
+.carousel-inner img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+.price {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.discount {
+  color: #0f0;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.new-price {
+  color: #00ffea;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card.bg-dark:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 234, 0.5);
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  flex-wrap: wrap;
+}
+
+.footer .logo-footer img {
+  height: 50px;
+}
+
+.footer .copyright {
+  flex: 1;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.footer .social-footer {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer .social-footer a {
+  color: #00ffea;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+.footer .social-footer a:hover {
+  color: #0ff;
+}
+
+.social-sidebar {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 999;
+  padding: 8px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.social-sidebar .social-icon {
+  display: block;
+  padding: 12px 14px;
+  color: #00ffea;
+  font-size: 1.3rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.social-sidebar .social-icon:hover {
+  background-color: rgba(0, 255, 234, 0.15);
+  color: #0ff;
+  text-shadow: 0 0 6px #0ff;
+}
+
+@media (max-width: 991px) {
+  .social-sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .carousel-inner {
+    height: 300px;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+
+  .card-body {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn-accent {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .logo-footer,
+  .footer .copyright,
+  .footer .social-footer {
+    margin-bottom: 10px;
+  }
+}
+.gallery-img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+.lightbox:target {
+  display: flex;
+}
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.6);
+}
+
+.close-btn, .nav-btn {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: #0ff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.close-btn:hover, .nav-btn:hover {
+  background: rgba(0, 255, 255, 0.7);
+  color: #fff;
+}
+
+.close-btn {
+  top: 20px;
+  right: 30px;
+  font-weight: bold;
+  z-index: 10000;
+}
+
+.prev-btn {
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  z-index: 10000;
+}
+
+.next-btn {
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  z-index: 10000;
+}
+
+
+
+/* Fix: Ensure Book Game Time button text appears black even inside .nav-link */
+.navbar .btn-accent.text-dark {
+  color: #000 !important;
+}
+/* Navbar base style */
+nav.navbar {
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1030; /* above other content */
+}
+
+/* Navbar background changes on scroll */
+nav.navbar.scrolled {
+  background-color: #000; /* solid black */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 600; /* set bold by default */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+/* Hover and active state */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #00ffff; /* neon cyan accent */
+  text-decoration: none;
+  /* no font-weight change here */
+}
+
+
+/* Brand logo */
+.navbar-brand img {
+  width: 90px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+/* Custom toggler */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='cyan' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Adjust button colors if needed */
+.btn-accent {
+  background-color: #00ffff;
+  color: #000;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-accent:hover {
+  background-color: #00cccc;
+  color: #fff;
+}
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2; /* Behind everything */
+  pointer-events: none;
+  filter: brightness(0.5); /* Optional: darkens video */
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+
+
+
+

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hunter's Den | Home</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon_io/site.webmanifest">
+
+  <!-- Google Fonts + FontAwesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="home"></div>
+
+  <video autoplay muted loop playsinline id="background-video">
+  <source src="images/bgg.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+  <!-- Floating Social Sidebar -->
+  <div class="social-sidebar d-none d-lg-block">
+    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitch"></i></a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid d-flex align-items-center px-3">
+    <a class="navbar-brand" href="#home">
+      <img src="images/logo.png" alt="Hunter's Den Logo">
+    </a>
+    <button class="navbar-toggler bg-light ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon text-white"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav d-flex flex-row gap-2 ms-2">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#games">Games</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#owner">Owner</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-accent text-dark ms-2 px-3 py-1" href="#booking">Book Game Time</a>
+        </li>
+      </ul>
+      <div class="d-flex align-items-center me-3">
+        <a href="login.html" class="btn-accent">Login</a>
+        <a href="register.html" class="btn-accent">Register</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero -->
+  <section class="hero text-center d-flex align-items-center justify-content-center">
+    <div class="container">
+      <h1 class="display-5 display-md-4 display-lg-3">Welcome to Hunter's Den</h1>
+      <p class="lead text-light">Unleash your inner gamer at the ultimate gaming zone</p>
+      <a href="#games" class="btn btn-glow mt-3 me-2">Explore Games</a>
+      <a href="#booking" class="btn btn-accent mt-3">Book Game Time</a>
+    </div>
+  </section>
+
+  <!-- Modern Carousel -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center text-info mb-5 section-title">What’s Hot in the Den</h2>
+    <div id="gameCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner rounded-4 overflow-hidden shadow-lg">
+        <div class="carousel-item active position-relative">
+          <img src="images/slide1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="glow-text">EA Sports FC 25</h5>
+            <p>Get in the game with the latest football action.</p>
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img src="images/slide2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="glow-text">PUBG</h5>
+            <p>Survive and dominate in the battlegrounds.</p>
+          </div>
+        </div>
+        <!-- Add more items similarly -->
+        <div class="carousel-item position-relative">
+          <img src="images/slide3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="glow-text">Forza Horizon 5</h5>
+            <p>Speed and style across breathtaking landscapes.</p>
+          </div>
+        </div>
+        <!-- Add the rest of your slides here... -->
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#gameCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-info rounded-circle p-3" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#gameCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-info rounded-circle p-3" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Packages -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2 class="section-title">Popular Packages</h2>
+      <div class="row mt-4 g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white h-100">
+            <img src="images/package1.jpg" class="card-img-top" alt="Package 1">
+            <div class="card-body">
+              <h5 class="card-title">Hourly Session</h5>
+              <p class="card-text"><span class="old-price">150</span> <span class="new-price">120 BDT/hr</span></p>
+              <p class="discount">20% OFF</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card bg-dark text-white h-100">
+            <img src="images/package2.jpg" class="card-img-top" alt="Package 2">
+            <div class="card-body">
+              <h5 class="card-title">Night Owl Pack</h5>
+              <p class="card-text">4h × 120 = 480<br><span class="new-price">408 BDT</span></p>
+              <p class="discount">15% OFF — Save 72 BDT</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mx-md-auto mx-lg-0">
+          <div class="card bg-dark text-white h-100">
+            <img src="images/package3.jpg" class="card-img-top" alt="Package 3">
+            <div class="card-body">
+              <h5 class="card-title">Squad Deal</h5>
+              <p class="card-text">4 controllers<br><span class="new-price">200 BDT/hr</span></p>
+              <p class="discount">4 players = 800/hr</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero -->
+<section id="games" class="hero text-center">
+  <div class="container">
+    <h1 class="display-5">Featured Games</h1>
+    <p class="lead text-light">Check out what’s available at Hunter’s Den</p>
+  </div>
+</section>
+
+<!-- Games Grid -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Example Game Card -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card bg-dark text-white h-100">
+          <img src="images/games/maxresdefault.webp" class="card-img-top" alt="FC 25 Banner" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">EA Sports FC 25</h5>
+            <p class="card-text flex-grow-1">Experience ultimate football realism with updated AI intelligence, real club licenses, and immersive modes.</p>
+            <span class="badge bg-info align-self-start">PC / PS5 / Xbox</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat other games similarly -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card bg-dark text-white h-100">
+          <img src="images/games/pubg.webp" class="card-img-top" alt="PUBG Banner" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">PUBG: Battlegrounds</h5>
+            <p class="card-text flex-grow-1">Jump into the battle royale action—solo or squad up, gear up, and fight to be the last one standing.</p>
+            <span class="badge bg-info align-self-start">PC / Console</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card bg-dark text-white h-100">
+          <img src="images/games/forza.jpeg" class="card-img-top" alt="Forza Horizon 5 Banner" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Forza Horizon 5</h5>
+            <p class="card-text flex-grow-1">Explore vibrant open-world Mexico in the most diverse and realistic Horizon yet.</p>
+            <span class="badge bg-info align-self-start">Xbox / PC</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card bg-dark text-white h-100">
+          <img src="images/games/it takes two.jpeg" class="card-img-top" alt="It Takes Two Banner" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">It Takes Two</h5>
+            <p class="card-text flex-grow-1">Join an unforgettable co-op journey through creative levels & story — teamwork is key.</p>
+            <span class="badge bg-info align-self-start">PC / PS5 / Xbox</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card bg-dark text-white h-100">
+          <img src="images/games/mk.jpg" class="card-img-top" alt="Mortal Kombat Banner" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Mortal Kombat</h5>
+            <p class="card-text flex-grow-1">Fight in brutal one-on-one matches featuring iconic kombatants & gruesome fatalities.</p>
+            <span class="badge bg-info align-self-start">PC / Console</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card bg-dark text-white h-100">
+          <img src="images/games/starlit.jpg" class="card-img-top" alt="Starlit Racing" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Mortal Kombat</h5>
+            <p class="card-text flex-grow-1">Come on race me if you dare!</p>
+            <span class="badge bg-info align-self-start">PC / Console</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Hero Section -->
+<section id="about" class="hero">
+  <div class="container text-center">
+    <h1>About Hunter’s Den</h1>
+    <p class="lead text-light">The story behind your ultimate gaming zone</p>
+  </div>
+</section>
+
+<!-- About Info Section -->
+<section class="py-5 text-light">
+  <div class="container">
+    <!-- WHO WE ARE -->
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <h2 class="section-title">🕹️Who We Are</h2>
+        <p>At Hunter’s Den, we are more than just a gaming center — we’re a community of passionate gamers, creators, and tech enthusiasts. Founded with the vision of building a vibrant space for all types of players, we blend high-performance gaming setups with a welcoming, energetic environment. Whether you're a casual gamer, a competitive pro, or someone seeking a fun time with friends, Hunter’s Den offers an unforgettable experience that fuels your passion for play. Step into the Den — where the game never ends and the hunters always rise.</p>
+      </div>
+      <div class="col-md-6">
+        <a href="https://devsuki.itch.io/bongoboltu-morenai" target="_blank"><img src="images/cr1.jpg" alt="Who We Are" class="img-fluid rounded shadow"></a>
+      </div>
+    </div>
+
+    <!-- WHAT WE OFFER -->
+    <div class="row mb-5 flex-md-row-reverse">
+      <div class="col-md-6">
+        <h2 class="section-title">🎮What We Offer</h2>
+        <p>At Hunter’s Den, we provide top-tier gaming experiences tailored to every player’s needs. From cutting-edge PCs and consoles to immersive VR setups, our facility is equipped to deliver the latest and greatest in gaming technology. Enjoy comfortable lounges, competitive tournaments, and exclusive game launches all under one roof. Whether you’re here to play solo, squad up with friends, or sharpen your skills, Hunter’s Den is your ultimate destination for entertainment, connection, and endless fun.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/image.png" alt="What We Offer" class="img-fluid rounded shadow">
+      </div>
+    </div>
+
+    <!-- OUR MISSION -->
+    <div class="row mb-5">
+      <div class="col text-center">
+        <h2 class="section-title">Our Mission</h2>
+        <p>We aim to build a thriving gaming community where friends connect, players compete, and everyone belongs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Inside <body>, below the Packages section, add this: -->
+
+<!-- Book Game Time Section -->
+<section id="booking" class="py-5 text-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 bg-dark p-4 rounded shadow">
+        <h2 class="text-center mb-4 text-info">Book Your Game Time</h2>
+        <form id="bookingForm" novalidate>
+
+          <div class="mb-3">
+            <label for="gameSelect" class="form-label">Select Game</label>
+            <select class="form-select" id="gameSelect" required>
+              <option selected disabled value="">Choose...</option>
+              <option value="EA Sports FC 25">EA Sports FC 25</option>
+              <option value="PUBG">PUBG</option>
+              <option value="Forza Horizon 5">Forza Horizon 5</option>
+              <option value="It Takes Two">It Takes Two</option>
+              <option value="Mortal Kombat">Mortal Kombat</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="dateInput" class="form-label">Choose Date</label>
+            <input type="date" class="form-control" id="dateInput" required>
+          </div>
+          <div class="mb-3">
+            <label for="timeInput" class="form-label">Choose Time</label>
+            <input type="time" class="form-control" id="timeInput" required>
+          </div>
+          <button type="submit" class="btn btn-accent px-4 py-2 d-block mx-auto">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="py-5">
+  <div class="container">
+    <h2 class="text-center text-info section-title">Our Gaming Moments</h2>
+    <div class="row g-4 mt-4">
+      <!-- Gallery Images -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="#img1"><img src="images/gallery/1.jpg" class="gallery-img" alt="Gaming Session 1"></a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="#img2"><img src="images/gallery/2.jpg" class="gallery-img" alt="Gaming Session 2"></a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="#img3"><img src="images/gallery/3.jpg" class="gallery-img" alt="Gaming Session 3"></a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="#img4"><img src="images/gallery/4.jpg" class="gallery-img" alt="Gaming Session 4"></a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="#img5"><img src="images/gallery/5.jpg" class="gallery-img" alt="Gaming Session 5"></a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="#img6"><img src="images/gallery/6.jpg" class="gallery-img" alt="Gaming Session 6"></a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="#img7"><img src="images/gallery/7.jpg" class="gallery-img" alt="Gaming Session 7"></a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <a href="#img8"><img src="images/gallery/8.jpg" class="gallery-img" alt="Gaming Session 8"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Owner Section -->
+<section id="owner" class="py-5 text-light text-center">
+  <div class="container">
+    <h2 class="text-info mb-4">Meet the Owner</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <img src="images/gallery/arib.jpg" alt="Owner Photo" class="img-fluid rounded-circle shadow-lg mb-3" style="width: 250px; height: 250px; object-fit: cover;">
+        <h4 class="mt-3">Arib Uz Zaman</h4>
+        <p class="text-muted">Founder & Lead Strategist</p>
+      </div>
+      <div class="col-md-8">
+        <p class="lead text-start">Driven by a passion for gaming and innovation, Arib founded Hunter's Den to bring an immersive gaming environment to the community. With years of gaming experience, technical skills, and leadership, he has cultivated a hub for gamers to connect, compete, and grow. Whether it's hosting tournaments or introducing the latest gaming tech, Arib ensures that Hunter's Den stays ahead in the game.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="py-5 text-light">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <h2 class="section-title">Get in Touch</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="your@email.com" />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="Your message..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h2 class="section-title">Our Location</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.497979797898!2d90.4040171!3d23.7637744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7758fd8455d%3A0x2345b38ff452a151!2sHunter&#39;s%20Den!5e0!3m2!1sen!2sbd!4v1719405280034!5m2!1sen!2sbd"
+          width="100%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Modals with navigation and close buttons -->
+<div id="lightbox" class="lightbox">
+  <button class="close-btn" onclick="closeLightbox()">&times;</button>
+  <button class="nav-btn prev-btn" onclick="changeImage(-1)">&#10094;</button>
+  <img id="lightbox-img" src="" alt="Gallery Image" />
+  <button class="nav-btn next-btn" onclick="changeImage(1)">&#10095;</button>
+</div>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer flex-column flex-md-row text-center text-md-start">
+    <div class="logo-footer mb-3 mb-md-0">
+      <img src="images/logo.png" alt="Hunter's Den Logo">
+    </div>
+    <div class="copyright mb-2 mb-md-0">
+      &copy; 2025 Hunter’s Den. All Rights Reserved.
+    </div>
+    <div class="social-footer justify-content-center justify-content-md-end">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-discord"></i></a>
+      <a href="#"><i class="fab fa-twitch"></i></a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap + Custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+  <script>
+  const bookedSlots = [
+    { game: "EA Sports FC 25", date: "2025-07-01", time: "15:00" },
+    { game: "PUBG", date: "2025-07-01", time: "14:30" },
+    { game: "Forza Horizon 5", date: "2025-07-02", time: "16:00" }
+  ];
+
+  document.getElementById("bookingForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const game = document.getElementById("gameSelect").value;
+    const date = document.getElementById("dateInput").value;
+    const time = document.getElementById("timeInput").value;
+
+    const isBooked = bookedSlots.some(
+      slot => slot.game === game && slot.date === date && slot.time === time
+    );
+
+    if (isBooked) {
+      alert("⚠️ Sorry, this time slot is already booked. Please choose another.");
+    } else {
+      alert("✅ Slot available! Your booking has been confirmed.");
+    }
+  });
+</script>
+<script>
+  const galleryImages = [
+    "images/gallery/1.jpg",
+    "images/gallery/2.jpg",
+    "images/gallery/3.jpg",
+    "images/gallery/4.jpg",
+    "images/gallery/5.jpg",
+    "images/gallery/6.jpg",
+    "images/gallery/7.jpg",
+    "images/gallery/8.jpg"
+  ];
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  let currentIndex = 0;
+
+  // Open lightbox and show clicked image
+  function openLightbox(index) {
+    currentIndex = index;
+    lightbox.style.display = "flex";
+    lightboxImg.src = galleryImages[currentIndex];
+  }
+
+  // Close lightbox
+  function closeLightbox() {
+    lightbox.style.display = "none";
+    lightboxImg.src = "";
+  }
+
+  // Change image by +1 or -1
+  function changeImage(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = galleryImages.length - 1;
+    if (currentIndex >= galleryImages.length) currentIndex = 0;
+    lightboxImg.src = galleryImages[currentIndex];
+  }
+
+  // Attach click handlers to gallery images
+  document.querySelectorAll('.gallery-img').forEach((img, idx) => {
+    img.addEventListener('click', (e) => {
+      e.preventDefault();
+      openLightbox(idx);
+    });
+  });
+
+  // Close lightbox if click outside the image
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+</script>
+<script>
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('nav.navbar');
+    if(window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+
+
+</body>
+</html>
